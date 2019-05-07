@@ -4,13 +4,24 @@ body{
   margin: 0;
 }
 
+h2{
+  background-image: url(Black.png);
+  line-height: 50px;
+  padding: 0 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.logo{
+  font-size: 0;
+}
+
 /* <div class="headerInner">に
 横幅と高さを指定して、位置を中央寄せにします。 */
 /* marginをautoに設定すると、要素を左右中央に配置することができます。 */
-.headerInner,.mainInner{
+.mainInner{
   max-width: 650px;
   margin: auto;
-  padding: 0 20px;
 }
 
 /* display:flexは要素を横並びにしたり、伸長・収縮させることができるCSSプロパティです。 */
@@ -58,6 +69,17 @@ footer{
   text-align: center;
   margin-top: 50px;
   padding: 30px;
+}
+
+.aboutWrapper img{
+  float:left;
+  margin-right: 10px;
+}
+
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /* メモ */
