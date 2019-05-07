@@ -4,10 +4,6 @@ body{
   margin: 0;
 }
 
-/* ヘッダーに背景色を指定します。 */
-header{
-  background: #eee;
-}
 /* <div class="headerInner">に
 横幅と高さを指定して、位置を中央寄せにします。 */
 /* marginをautoに設定すると、要素を左右中央に配置することができます。 */
@@ -25,6 +21,34 @@ header{
   justify-content: space-between;
   align-items: center;
 }
+
+/* キービジュアルを横中央に配置します。テキストや画像を横中央に配置したいときはtext-alignを使います。 */
+.keyVisual{
+    text-align: center;
+}
+
+/* 料金表 */
+.priceWrapper table,
+.priceWrapper th,
+.priceWrapper td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.priceWrapper th,
+.priceWrapper td{
+    padding: 7px;
+}
+
+.priceWrapper table{
+    width: 100%;
+}
+
+.priceWrapper th{
+    width: 150px;
+    background: #eee;
+}
+
 
 footer{
   background: #eee;
