@@ -1,20 +1,27 @@
+/* <body>に対してあらかじめmarginというCSSプロパティが設定されています。
+marginというのは要素と要素の間の余白を調整するためのCSSプロパティです。 */
 body{
   margin: 0;
 }
 
+/* ヘッダーに背景色を指定します。 */
 header{
   background: #eee;
 }
-
+/* <div class="headerInner">に
+横幅と高さを指定して、位置を中央寄せにします。 */
+/* marginをautoに設定すると、要素を左右中央に配置することができます。 */
 .headerInner,.mainInner{
   max-width: 650px;
   margin: auto;
   padding: 0 20px;
 }
 
+/* display:flexは要素を横並びにしたり、伸長・収縮させることができるCSSプロパティです。 */
 .headerInner{
   height: 100px;
   display: flex;
+  /*justify-contentとalign-itmesは、displayをflexにした場合の細かい設定です。  */
   justify-content: space-between;
   align-items: center;
 }
@@ -28,3 +35,7 @@ footer{
   margin-top: 50px;
   padding: 30px;
 }
+
+/* メモ */
+/* marginは要素と要素に間をあける役割
+paddingは要素の中身に余白をあける役割 */
