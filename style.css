@@ -1,28 +1,18 @@
+/* bodyタグ全体 */
+/* ////////////////////////////////////////////////// */
 /* <body>に対してあらかじめmarginというCSSプロパティが設定されています。
 marginというのは要素と要素の間の余白を調整するためのCSSプロパティです。 */
 body{
   margin: 0;
 }
 
-h2{
-  background-image: url(Black.png);
-  line-height: 50px;
-  padding: 0 15px;
-  color: #fff;
-  text-align: center;
-}
+/* メインコンテンツの設定 */
+/* ////////////////////////////////////////////////// */
 
 .logo{
   font-size: 0;
 }
 
-/* <div class="headerInner">に
-横幅と高さを指定して、位置を中央寄せにします。 */
-/* marginをautoに設定すると、要素を左右中央に配置することができます。 */
-.mainInner{
-  max-width: 650px;
-  margin: auto;
-}
 
 /* display:flexは要素を横並びにしたり、伸長・収縮させることができるCSSプロパティです。 */
 .headerInner{
@@ -33,10 +23,48 @@ h2{
   align-items: center;
 }
 
+
+
+
+/* 各コンテンツの設定 */
+/* ////////////////////////////////////////////////// */
 /* キービジュアルを横中央に配置します。テキストや画像を横中央に配置したいときはtext-alignを使います。 */
 .keyVisual{
     text-align: center;
 }
+
+/* <div class="headerInner">に
+横幅と高さを指定して、位置を中央寄せにします。 */
+/* marginをautoに設定すると、要素を左右中央に配置することができます。 */
+.mainInner{
+  max-width: 650px;
+  margin: auto;
+}
+
+.aboutWrapper img{
+  float:left;
+  margin-right: 10px;
+}
+
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+h2{
+  background-image: url(Black.png);
+  line-height: 50px;
+  padding: 0 15px;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+/* 各コンテンツの設定 */
+/* ////////////////////////////////////////////////// */
+/* キービジュアルを横中央に配置します。テキストや画像を横中央に配置したいときはtext-align
 
 /* 料金表 */
 .priceWrapper table,
@@ -61,6 +89,9 @@ h2{
 }
 
 
+/* footerの設定 */
+/* ////////////////////////////////////////////////// */
+
 footer{
   background: #eee;
 }
@@ -69,17 +100,6 @@ footer{
   text-align: center;
   margin-top: 50px;
   padding: 30px;
-}
-
-.aboutWrapper img{
-  float:left;
-  margin-right: 10px;
-}
-
-.clearfix:after{
-  content: "";
-  display: block;
-  clear: both;
 }
 
 /* メモ */
