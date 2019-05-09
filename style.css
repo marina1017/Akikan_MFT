@@ -10,7 +10,29 @@ body{
 /* ////////////////////////////////////////////////// */
 
 .logo{
-  font-size: 0;
+  font-size: 20;
+}
+
+/* お問い合わせボタン */
+/* /////////////////////////////////////////////////// */
+.hover-transition{
+  text-align: center;
+}
+.hover-transition a{
+  background: skyblue;
+  color: #fff;
+  width:150px;
+  height:50px;
+  display:inline-block;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+  font-size: 15px;
+  transition: 700ms;
+}
+.hover-transition a:hover{
+  background: orange ;
 }
 
 
@@ -50,6 +72,12 @@ body{
   content: "";
   display: block;
   clear: both;
+}
+
+/* 画像を丸くする */
+.border-radius{
+  /* ここからborder-radiusプロパティを追加 */
+  border-radius: 100px;
 }
 
 h2{
