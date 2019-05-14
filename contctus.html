@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- エンコーディングと言って、コンピューターが書かれている文字をどういうルールで読み取るかというルールを指定したもの -->
+  <meta charset="utf-8">
+  <!-- 画面の表示領域を設定するもの -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- IEではレンダリングモードといって、古いWebサイトが新しいIEで表示できない場合に、古いバージョンのIEの状態で表示をするという設定があります。
+閲覧者がこの設定で見ていると、新しいWebサイトも古いバージョンのIEという状態で表示されてしまうので、それを防ぐための設定 -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- ブラウザのタブの部分に表示するタイトルを指定 -->
+  <title>テクノ空き缶</title>
+  <!-- tyle.cssを読み込むように、href 属性にstyle.cssを指定します。 -->
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header>
+    <!-- 「かたまり」「グループ化」
+    .headerInnerのようにclassを指定して展開すると、自動的に<div>タグにclassが入った状態で展開されます -->
+    <div class="headerInner">
+      <!-- <h1>タグは「見出し1」という意味で、ページの中で最も１番大きな見出しという意味です。サイトの名称や、記事のタイトルに利用されます。 -->
+      <h1 class="logo"><img src="logo.png" width="150" height="64" alt=""></h1>
+      <!-- <nav>タグは「ナビゲーション」という意味。
+      ナビゲーションは1個とは限らないので、ここではclassでglobalNavと命名することで、ここがグローバルナビゲーションであることを明示しました。 -->
+    </div>
+  </header>
+
+<!--<main>タグは、主要なコンテンツ  -->
+  <main>
+    <h1>お問い合わせ</h1>
+    <form action="thanks.html">
+      <!-- 今回は表組み（table）を使ってレイアウトを組む -->
+      <table class="contactForm">
+        <tr>
+          <td><label for="name">お名前</label></td>
+          <td><input type="text" name="name" placeholder="名前を入れてください"></td>
+        </tr>
+        <tr>
+          <td>性別</td>
+            <td>
+              <input type="radio" name="gender" id="male" value="male"><label for="male">男性</label>
+              <input type="radio" name="gender" id="female" value="female"><label for="female">女性</label>
+            </td>
+          </tr>
+        <tr>
+        <tr>
+          <td>年齢</td>
+          <td>
+            <div class="selectBox">
+              <select name="age" id="">
+                <option value="10">10代</option>
+                <option value="20">20代</option>
+                <option value="30">30代</option>
+                <option value="40">40代</option>
+                <option value="other">それ以上</option>
+              </select>
+            </div>
+          </td>
+        </tr>
+        <!-- <tr>タグで行を1行追加し、<th>タグと<td>タグでセルを2つ追加します。 -->
+        <tr>
+            <th><label for="title">題名</label></th>
+            <td><input type="text" name="title" placeholder="タイトルを入れてください"></td>
+        </tr>
+        <tr>
+            <th><label for="comment">質問内容</label></th>
+            <td><textarea name="comment" cols="30" rows="10"></textarea></td>
+        </tr>
+      </table>
+    </form>
+    <!-- 個人情報 -->
+    <div class="text-center">
+      <div class="text-center">
+        <input type="checkbox" id="check"><label for="check">個人情報の取扱に同意する</label>
+      </div>
+    </div>
+    <!-- 送信ボタン -->
+    <div class="text-center">
+        <input onclick="location.href='./index.html'" type="submit" value="送信する">
+    </div>
+  </main>
+
+  <footer>
+    <div class="footerInner">
+      <!--  <small>タグは免責・警告・著作権などの注釈や細目を表すタグです。-->
+      <!-- &copy;と書いた部分はブラウザ上では「©」として表示されます。HTMLでは特殊な文字を出力するときは、& と指定のコードと ; で記述します。 -->
+      <small>&copy; kono lab 2019</small>
+    </div>
+  </footer>
+</body>
+</html>

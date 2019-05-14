@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- エンコーディングと言って、コンピューターが書かれている文字をどういうルールで読み取るかというルールを指定したもの -->
+  <meta charset="utf-8">
+  <!-- 画面の表示領域を設定するもの -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- IEではレンダリングモードといって、古いWebサイトが新しいIEで表示できない場合に、古いバージョンのIEの状態で表示をするという設定があります。
+閲覧者がこの設定で見ていると、新しいWebサイトも古いバージョンのIEという状態で表示されてしまうので、それを防ぐための設定 -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- ブラウザのタブの部分に表示するタイトルを指定 -->
+  <title>テクノ空き缶</title>
+  <!-- tyle.cssを読み込むように、href 属性にstyle.cssを指定します。 -->
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header>
+    <!-- 「かたまり」「グループ化」
+    .headerInnerのようにclassを指定して展開すると、自動的に<div>タグにclassが入った状態で展開されます -->
+    <div class="headerInner">
+      <!-- <h1>タグは「見出し1」という意味で、ページの中で最も１番大きな見出しという意味です。サイトの名称や、記事のタイトルに利用されます。 -->
+      <h1 class="logo"><img src="logo.png" width="150" height="64" alt=""></h1>
+    </div>
+  </header>
+
+<!--<main>タグは、主要なコンテンツ  -->
+  <main>
+    <h1>お問い合わせ完了</h1>
+    <div class="text-center">
+      <p>担当者より折り返しご連絡いたします。</p>
+      <a href="index.html">トップページへ</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footerInner">
+      <!--  <small>タグは免責・警告・著作権などの注釈や細目を表すタグです。-->
+      <!-- &copy;と書いた部分はブラウザ上では「©」として表示されます。HTMLでは特殊な文字を出力するときは、& と指定のコードと ; で記述します。 -->
+      <small>&copy; kono lab 2019</small>
+    </div>
+  </footer>
+</body>
+</html>
